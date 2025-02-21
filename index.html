@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Juguetes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="fotos/logo1.PNG" alt="Logo de la tienda">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categoría</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><input type="text" placeholder="Buscar..."></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <span>🛒</span>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section class="carousel">
+        <div class="carousel-inner">
+            <img src="fotos/Banner 1.jpg" alt="Imagen 1">
+            <img src="fotos/Banner2.jpg" alt="Imagen 2">
+            <img src="fotos/banner 6.jpg" alt="Imagen 3">
+            <img src="fotos/banner peluche.png" alt="Imagen 4">
+        </div>
+    </section>
+
+<!-- Sección de categorías -->
+<section class="categories">
+    <h2 style="background-color: #65F553;">Categorías</h2>
+    <div class="category-carousel">
+        <!-- Tarjeta de Funkos -->
+        <div class="category-card">
+            <div class="image-carousel">
+                <img src="fotos/funko 3.jfif" alt="Funko 1" class="active">
+                <img src="fotos/funko 5.jfif" alt="Funko 2">
+                <img src="fotos/funko 6.jfif" alt="Funko 3">
+            </div>
+            <h3>Funkos</h3>
+            <p>Figuras coleccionables de tus personajes favoritos.</p>
+        </div>
+
+        <!-- Tarjeta de Cartas Coleccionables -->
+        <div class="category-card">
+            <div class="image-carousel">
+                <img src="fotos/carta 3.jfif" alt="Cartas 1" class="active">
+                <img src="fotos/carta 4.jfif" alt="Cartas 2">
+                <img src="fotos/cartas 2.jpg" alt="Cartas 3">
+            </div>
+            <h3>Cartas Coleccionables</h3>
+            <p>Cartas de juegos y colecciones únicas.</p>
+        </div>
+
+        <!-- Tarjeta de Peluches -->
+        <div class="category-card">
+            <div class="image-carousel">
+                <img src="fotos/peluche 3.jfif" alt="Peluche 1" class="active">
+                <img src="fotos/peluche 4.jfif" alt="Peluche 2">
+                <img src="fotos/peluche pokemon.jfif" alt="Peluche 3">
+            </div>
+            <h3>Peluches</h3>
+            <p>Los peluches más suaves y adorables.</p>
+        </div>
+
+        <!-- Tarjeta de Artículos de Pokémon -->
+        <div class="category-card">
+            <div class="image-carousel">
+                <img src="fotos/articulos pokemon.jfif" alt="Pokémon 1" class="active">
+                <img src="fotos/articulo 3.jfif" alt="Pokémon 2">
+                <img src="fotos/articulo 4.jfif" alt="Pokémon 3">
+            </div>
+            <h3>Artículos de Pokémon</h3>
+            <p>Todo lo que necesitas para ser un maestro Pokémon.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de promociones -->
+<section class="promotions">
+    <h2 style="background-color: #65F553;">Promociones</h2>
+    <div class="promotion-container">
+        <div class="promotion-item">
+            <img src="fotos/promocion1.jfif" alt="Promoción 1" class="promotion-image">
+            <p class="promotion-description">¡Descuento del 20% en todos los funkos!</p>
+        </div>
+        <div class="promotion-item">
+            <img src="fotos/promocion2.jfif" alt="Promoción 2" class="promotion-image">
+            <p class="promotion-description">Compra 2 peluches y lleva el tercero gratis.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de registro -->
+    <section class="registration">
+        <h2>Regístrate</h2>
+        <form>
+            <label for="name">Nombres Completos:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="country">País:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label>
+                <input type="checkbox" required> Acepto los términos y condiciones.
+            </label>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <h3>Contacto</h3>
+            <p>Dirección: Ica-Ica, Perú</p>
+            <p>Teléfono: 987887373</p>
+            <p>Email: pokeshop@gmail.com</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.123456789012!2d-75.12345678901234!3d-14.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDA3JzI0LjQiUyA3NcKwMDcnMjQuNCJX!5e0!3m2!1ses!2spe!4v1621234567890!5m2!1ses!2spe" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="social-media">
+            <h3>Síguenos</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- Logotipo de WhatsApp -->
+    <a href="https://wa.me/51987887373" class="whatsapp-logo" target="_blank">
+        <img src="fotos/logo whastapps.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
